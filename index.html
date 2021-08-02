@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Responsive MetaTag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Tip Calculator- JavaScript</title>
+  <!-- Icon to the Title -->
+  <link rel="icon" href="image/calculator.png" />
+  <!-- StyleSheet Link -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Bootstrap CSS Link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="CalculatorWrapper">
+    <h3>TIP CALCULATOR</h3>
+    <hr />
+
+    <!-- User Input for Tip Calculation -->
+    <div id="box">
+      <!-- The big container-->
+      <div id="box1">
+        <!-- the first column containing Bill AMount, Tip% and Number of people sharing the bill-->
+
+        <p class="bill">Bill Amount</p>
+        <input class="form-control form-control-lg" type="text" id="amount" placeholder="Total amount" /><br />
+
+        <p class="bill">Tip%</p>
+        <input class="form-control form-control-lg" type="number" id="tipPercentage" placeholder="Tip Percentage" /><br />
+
+        <p class="bill">Number of People</p>
+        <input class="form-control form-control-lg" type="number" id="Persons" placeholder="Total Person" /><br /><br />
+
+        <button type="button" class="btn btn-success btn-lg" id="calculate">
+          Calculate
+        </button>
+        <!-- Calculate Button -->
+      </div>
+
+      <!-- End Result of Tip Calculation -->
+
+      <div id="box2">
+        <!-- the seond column containing the output result-->
+        <div class="info">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h2>Tip</h2>
+              <small class="text-muted">Per Person</small>
+              <!--for faded text -->
+            </div>
+            <div class="money col-12 col-md-6">
+              <strong>$</strong><span id="PerPersonTip">00.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h2>Total</h2>
+              <small class="text-muted">Per Person</small><br />
+              <!--for faded text -->
+            </div>
+            <div class="money col-12 col-md-6">
+              <strong>$</strong><span id="PerPersonAmount">00.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="tip.js" charset="utf-8"></script>
+</body>
+
+</html>
